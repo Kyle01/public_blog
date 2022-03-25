@@ -1,4 +1,4 @@
-console.log('hello world')
+console.log('hello world');
 
 const contents = document.getElementById('contents')
 const li = document.createElement("li");

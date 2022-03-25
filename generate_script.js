@@ -1,6 +1,14 @@
 const fs = require('fs');
+const readline = require('readline');
 const showdown = require('showdown');
 
-const file = fs.readFileSync('./markdown/test_post.md');
 const convertor = showdown.Converter();
-console.log(file);
+
+const rl = readline.createInterface({
+    input: fs.createReadStream('./markdown/test_post.md'),
+    crlfDelay: Infinity
+  });
+
+rl.on('line', (line) => {
+    console.log(`Line from file: ${line}`);
+})

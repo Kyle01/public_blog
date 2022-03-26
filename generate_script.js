@@ -30,7 +30,7 @@ fs.readdirSync('./writings/').forEach((file) => {
         }
         fs.writeFileSync('./contents.json', '')
         fs.appendFileSync('./contents.json', JSON.stringify(contentsJson));
-        fs.appendFileSync(`./posts/${path}/index.html`, '');
+        fs.writeFileSync(`./posts/${path}/index.html`, '');
         fs.appendFileSync(`./posts/${path}/index.html`, `<link rel="stylesheet" type="text/css" href="../../style.css">`);
 
       }

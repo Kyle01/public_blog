@@ -8,7 +8,6 @@ This serves as my personal public blog. I write the posts in markdown and then a
 * HTML & CSS
 
 # Pending items
-* I need to create a dynamic contents on the first page that links to the actual posts
 * Styling is absolutely terrible, it needs to be updated 
 * Need to test out pictures via s3 
 * Would like to build some CD/CI that automatically runs the generate script

@@ -6,7 +6,6 @@ const convertor = new showdown.Converter();
 const contentList = [];
 
 fs.readdirSync('./writings/').forEach((file) => {
-  console.log(file)
   const rl = readline.createInterface({
     input: fs.createReadStream(`./writings/${file}`),
     crlfDelay: Infinity
@@ -31,12 +30,12 @@ fs.readdirSync('./writings/').forEach((file) => {
         }
         fs.writeFileSync('./contents.json', '')
         fs.appendFileSync('./contents.json', JSON.stringify(contentsJson));
+        fs.appendFileSync(`./posts/${path}/index.html`, '');
+        fs.appendFileSync(`./posts/${path}/index.html`, `<link rel="stylesheet" type="text/css" href="../../style.css">`);
+
       }
-  });
-
-  rl.on('line', (line) => {
       const html = convertor.makeHtml(line);
-
+    
       fs.appendFileSync(`./posts/${path}/index.html`, html);
   });
 })

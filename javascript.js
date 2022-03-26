@@ -5,9 +5,9 @@ contents.appendChild(li);
 
 fetch('./contents.json').then(response => response.json()).then(json => {
     console.log(json);
-    json.forEach(element => {
+    json.contents.forEach(element => {
         const li = document.createElement("li");
-        li.appendChild(document.createTextNode(element));
+        li.appendChild(document.createTextNode(element.text));
         contents.appendChild(li);
     });
 });

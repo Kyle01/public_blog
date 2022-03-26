@@ -2,15 +2,38 @@ const fs = require('fs');
 const readline = require('readline');
 const showdown = require('showdown');
 
-fs.writeFileSync('./posts/first_post.html', "")
-
 const convertor = new showdown.Converter();
+const contentList = [];
 const rl = readline.createInterface({
     input: fs.createReadStream('./writings/test_post.md'),
     crlfDelay: Infinity
   });
 
+let lineNumber = 0;
+let path = ""
+
+rl.on('line', (line) => {
+    lineNumber++;
+    if (lineNumber === 1) {
+      const title = line.toString().slice(2);
+      path = line.toString().slice(2).replace(" ", "_").trim().toLowerCase();
+      contentList.push({
+        "text": title,
+        "path": path
+      });
+      if (!fs.existsSync(`./posts/${path}`)){
+        fs.mkdirSync(`./posts/${path}`);
+      }
+      const contentsJson = {
+        "contents": contentList
+      }
+      fs.writeFileSync('./contents.json', '')
+      fs.appendFileSync('./contents.json', JSON.stringify(contentsJson));
+    } 
+});
+
 rl.on('line', (line) => {
     const html = convertor.makeHtml(line);
-    fs.appendFileSync('./posts/first_post.html', html);
-})
+
+    fs.appendFileSync(`./posts/${path}/index.html`, html);
+});

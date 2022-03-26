@@ -1,12 +1,1 @@
-{
-    "contents":[
-      {
-        "text":"bar",
-        "path":"www.google.com"
-      },
-      {
-        "text":"foo",
-        "path":"www.apple.com"
-      }
-    ]
-  }
+{"contents":[{"text":"Test post ","path":"test_post"}]}

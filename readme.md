@@ -1,5 +1,5 @@
 # Overview
-This serves as my personal public blog. I write the posts in markdown and then a small script converts them to javascript pages. I enjoy writing markdown and having full ownership of the blog, so this seemed like the lightest weight option.
+This serves as my personal public blog. I write the posts in markdown and then a small script converts them to html pages. I enjoy writing markdown and having full ownership of the blog, so this seemed like the lightest weight option.
 
 # Technology
 * Javascript ES6
@@ -8,7 +8,6 @@ This serves as my personal public blog. I write the posts in markdown and then a
 * HTML & CSS
 
 # Pending items
-* Styling is absolutely terrible, it needs to be updated 
 * Need to test out pictures via s3 
 * Would like to build some CD/CI that automatically runs the generate script
 * Will consider switching from github pages to cloudflare pages

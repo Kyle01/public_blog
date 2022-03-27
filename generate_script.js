@@ -11,15 +11,21 @@ fs.readdirSync('./writings/').forEach((file) => {
   });
 
   let lineNumber = 0;
+  let title = "";
   let path = ""
   rl.on('line', (line) => {
       lineNumber++;
       if (lineNumber === 1) {
-        const title = line.toString().slice(2);
+        title = line.toString().slice(2);
         path = line.toString().slice(2).replace(" ", "_").trim().toLowerCase();
+        fs.writeFileSync(`./posts/${path}/index.html`, '');
+        fs.appendFileSync(`./posts/${path}/index.html`, `<link rel="stylesheet" type="text/css" href="../../style.css">`);
+      }
+      else if (lineNumber === 2) {
+        const date = line.toString().slice(4);
         contentList.push({
-          "text": title,
-          "path": path
+          "text": `${date} - ${title}`,
+          "path": `${path}`
         });
         if (!fs.existsSync(`./posts/${path}`)){
           fs.mkdirSync(`./posts/${path}`);
@@ -29,9 +35,6 @@ fs.readdirSync('./writings/').forEach((file) => {
         }
         fs.writeFileSync('./contents.json', '')
         fs.appendFileSync('./contents.json', JSON.stringify(contentsJson));
-        fs.writeFileSync(`./posts/${path}/index.html`, '');
-        fs.appendFileSync(`./posts/${path}/index.html`, `<link rel="stylesheet" type="text/css" href="../../style.css">`);
-
       }
       const html = convertor.makeHtml(line);
     

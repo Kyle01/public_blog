@@ -5,9 +5,13 @@ body {
     font-size: 18px;
     background-color: #f0e2c2;
     padding: 0 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Garamond", "Times New Roman", "serif";
 }
 
 ul {
     list-style: square;
+}
+
+li {
+    padding: 5px 0;
 }

@@ -1,3 +1,13 @@
 body {
-    background-color: #91e6d6;
+    margin: 40px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #f0e2c2;
+    padding: 0 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: square;
 }

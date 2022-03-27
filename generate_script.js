@@ -1,7 +1,6 @@
 const fs = require('fs');
 const readline = require('readline');
 const showdown = require('showdown');
-
 const convertor = new showdown.Converter();
 const contentList = [];
 

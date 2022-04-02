@@ -16,13 +16,17 @@ fs.readdirSync('./writings/').forEach((file) => {
   rl.on('line', (line) => {
       lineNumber++;
       if (lineNumber === 1) {
-        title = line.toString().slice(2);
-        path = line.toString().slice(2).replace(" ", "_").trim().toLowerCase();
+        title = line.toString().slice(3);
+        path = line.toString().slice(3).replace(" ", "_").trim().toLowerCase();
+        if (!fs.existsSync(`./posts/${path}`)) {
+          fs.mkdirSync(`./posts/${path}`);
+        }
         fs.writeFileSync(`./posts/${path}/index.html`, '');
+        fs.appendFileSync(`./posts/${path}/index.html`, `<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>`);
         fs.appendFileSync(`./posts/${path}/index.html`, `<link rel="stylesheet" type="text/css" href="../../style.css">`);
       }
       else if (lineNumber === 2) {
-        const date = line.toString().slice(4);
+        const date = line.toString().slice(5);
         contentList.push({
           "text": `${date} - ${title}`,
           "path": `${path}`

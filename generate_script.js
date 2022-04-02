@@ -26,7 +26,7 @@ fs.readdirSync('./writings/').forEach((file) => {
         fs.appendFileSync(`./posts/${path}/index.html`, `<link rel="stylesheet" type="text/css" href="../../style.css">`);
       }
       else if (lineNumber === 2) {
-        const date = line.toString().slice(5);
+        const date = line.toString().split(' - ')[0].slice(5);
         contentList.push({
           "text": `${date} - ${title}`,
           "path": `${path}`

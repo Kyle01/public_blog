@@ -1,4 +1,4 @@
-## Types of tech interviews
+## Types of Tech Interviews
 #### 4/2/2022 - Kyle McVeigh
 [Go back to all articles](../../)
 
@@ -30,10 +30,14 @@ This is another type of non-technical, common, and important interview I've gott
 ### 8. Take Home Project 
 Sometimes you'll be assigned a larger problem as a take home assignment. A typical take home might be: host a url-shortener service with expiring links. The interviewer wants to see you make high-quality code in a not-time restrained manner. The best piece of advice on these is to be kind to yourself and time box these. 
 
+
+
+
 ### 9. Tech Talk 
 These are not formal, but have occurred a fair amount, so I feel it is necessary to make them their own type of interview. They usually are thirty minute conversations with a member of the engineering team about what you're currently working on, what technology excites you, and some hard technical problem you've had to solve recently. The interviewer wants to see you're enthusiastic about coding and you do a good job keeping up-to-date with technology. 
 
 ### 10. Personality
 These are very much not tech specific, but are the most common type of white-collar interview. These are usually thirty minutes long with a member of the operations team. Type of questions include: Tell me about a time where a team-member wasn't pull their weight, how did you handle that? Or Tell me about a time where you had to cut-corners to handle an important deadline. The interviewer is ensuring you work well with a team and that you'd be a good culture fit for the role. Prepare for these by googling 'Typical personality interview questions' and have prepared answers. This will get you into the correct head-space to answer whatever they ask from you.  
 
+### Conclusion
 As a final piece of advice, try your best to ask the recruiter before the interview which type of the above types of interview you'll be having. This can ensure you prepare appropriately and don't waste your time studying the for the wrong interview type. Most recruiters are able to give this information and are happy to share that with you. 

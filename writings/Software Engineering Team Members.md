@@ -1,5 +1,5 @@
 ## Software Engineering Team Members
-#### 4/2/2022 - Kyle McVeigh
+#### 5/29/2022 - Kyle McVeigh
 [Go back to all articles](../../)
 
 As a product engineer working within a traditional businesses, I work closely with the business team and the executives. I am very often asked by coworkers at all levels what it is I do as a software engineer, and how do the product manager and designers fit into that. It is an awkward conversation when business team leads come up to me, as a software engineer, with feature requests and business justifications. When I tell them, you need to take this information to the product manager, I actually don't have absolute control on what we're building, the typical reaction is shock. I'm going to take the rest of this article to explain the role of product managers, designers, and software engineers. 

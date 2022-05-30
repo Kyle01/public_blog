@@ -17,7 +17,7 @@ fs.readdirSync('./writings/').forEach((file) => {
       lineNumber++;
       if (lineNumber === 1) {
         title = line.toString().slice(3);
-        path = line.toString().slice(3).replace(" ", "_").trim().toLowerCase();
+        path = line.toString().slice(3).replaceAll(" ", "_").trim().toLowerCase();
         if (!fs.existsSync(`./posts/${path}`)) {
           fs.mkdirSync(`./posts/${path}`);
         }

@@ -2,7 +2,7 @@
 #### 11/7/2022 - Kyle McVeigh
 [Go back to all articles](../../)
 
-Designing an API is not a one-shape-fits all, but these are the some of the best practice I've found when designing a CRUD API for a web-app.
+Designing an API is not a one-shape-fits all, but these are some of the best practice I've found when designing a CRUD API for a web-app.
 
 For this exercise, let's imagine you're building an API for a blog and we have an article table with the below shape 
 

@@ -1,0 +1,54 @@
+# Best practices for designing a CRUD API
+
+#### 11/7/2022 - Kyle McVeigh
+[Go back to all articles](../../)
+
+Designing an API is not a one-shape-fits all, but these are the some of the best practice I've found when designing a CRUD API for a web-app.
+
+For this exercise, let's imagine you're building an API for a blog and we have an article table with the below shape 
+
+```
+id: UUID 
+Title: string
+body: text
+author_id: UUID 
+status: enum (PUBLISHED, DRAFT, ARCHIVED) 
+created_at: timestamp
+updated_at: timestamp 
+```
+
+## Read
+Let's consider our fetch applications. There are three different actions I'll detail separately: Get, List, and Search 
+
+### Get
+#### Endpoint: GET `/api/article/${id}/`
+In the most basic form, we'll need to fetch a single article by ID. With a 200 it should return the entire object. In this example, we may want to include denormalized data about the author so the frontend doesn't have to do a second fetch for the author details. If an article can't be found with that ID a 404 should be returned.
+
+### List
+#### Endpoint: GET `/api/article/` parameters: `{ offset?: number }`
+This endpoint should return an array of article objects. If you're dealing with an excessively large table, I'd be mindful to include a limit in order to not stress your database or crash the user. I prefer to allow an optional parameter of an offset so the frontend can be in control of pagination. Be sure to create the array in a consistent and predictable ordering so the offset is deterministic. 
+
+### Search
+#### Endpoint: GET `/api/article/search` parameters: `{ title?: string }`
+Having a search endpoint is a common use case. This should return an array of found objects. I like it best when it is its own defined endpoint with a descriptive URL and there is search parameter object that takes all the fields that we'd like to search on. Search results should also have a limit and an offset.
+
+## Create
+#### Endpoint: POST `/api/article/` parameters: `{ title?: string, body?: string, ... }`
+The create should work with the minimum number of required parameters and not include an ID. The backend should handle the creation of the ID. The API should be resilient enough to parse strings to numbers, take dates in forgiving patterns, and handle other similar edge cases. A successful response should include a 200 and the entire newly created object, including the ID and timestamps. A failed case should be return 500 and include in the message why the failure occurred.
+
+## Update
+I'm going to cover two common update patterns: updating the field of an object, and moving that object to a new state that would effect cascading objects
+
+### Update Field
+#### Endpoint: PATCH `/api/article/${id}/` parameters: `{ title?: string }`
+When updating a single field or more than one field, the parameter should include a change object and only the fields included in the object should be updated. The fields not included on the change object should be left the same. On success a 200 should be returned along with the entire object. A 500 should be returned if the object was not updated and a 404 should be returned if the object could not be found.  
+
+### Trigger Updated State
+#### Endpoint: PATCH `/api/article/${id}/publish/` 
+Sometimes when a field is updated a service will kickoff that will update multiple fields and might even cascade and update multiple objects. In our scenario, imagine once an article gets a status called `publish` some code will be generated and automated emails will go out. Because this field has cascading effects, we want to be conscious of that and make a unique endpoint that will handle all cascading effects atomically. It is best that this field cannot be updated in the previous update endpoint in order to not have unintentional consequences. On success a 200 should return the entire updated object. 500 should be returned if the service could not run to completion and a 404 should be returned if the object could not be found.  
+
+## Delete
+#### Endpoint: DELETE `/api/article/${id}/`
+In this endpoint, there should be no other required parameters. The 200 response should include the deleted ID as confirmation and a deleted_at timestamp. A 500 should be returned if the object was not deleted and a 404 should be returned if the object could not be found. 
+
+I hope this has been helpful. Remember to aim in creating an API that is descriptive and resilient and to try to push logic down towards the database when possible. 

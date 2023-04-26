@@ -1,4 +1,4 @@
-## Yes ChatGPT is the Real Deal 
+## Yes, ChatGPT is the Real Deal 
 #### 4/25/2023 - Kyle McVeigh
 [Go back to all articles](../../)
 

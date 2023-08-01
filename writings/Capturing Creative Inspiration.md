@@ -1,0 +1,15 @@
+## Capturing Creative Inspiration 
+#### 7/31/2023 - Kyle McVeigh
+[Go back to all articles](../../)
+
+I recently read [The Creative Act: A Way of Being](https://www.amazon.com/Creative-Act-Way-Being/dp/0593652886), the 2023 book that is having a moment and it seems that everyone is talking about it. The book is fantastic and full of powerful mantras that I think most creators would find inspiring. One of the biggest takeaways from the book for me was about leaning into the momentum of creating, pushing during inspiration, and acting when the inspiration arrives for as long as possible. This feels very different from how I learned about training during my time in athletics.
+
+### Athletics, getting hot, and going hard
+I was a college athlete and athletics was a huge part of my adolescence. It has shaped my habits in more ways than I can articulate. When an athlete is training or competing there exists moments that feel better. This is often called the hot-hand phenomenon, but it could just be as simple as moments that feel like you could go harder. During these moments athletes will run faster, lift heavier, and push harder. Convention is that the athlete will do the same amount of exercise, but just do it harder. If a runner is experiencing a runner high, they will run the same scheduled length but they will do it faster. This is because if an athlete trains for a longer time it could cause problems with their future training and mess up their scheduled training routine, or even worse risk an injury.
+
+### Creatives, getting inspiration, and going long 
+When considering creative pursuits, I don't think there is a good concept of doing it harder. What great creators will do instead if they are inspired is continue to work through that inspiration until the flames of that have passed or they have reached a natural stopping point. This means that great creatives will go for longer than their scheduled or typical time during these hot moments. 
+
+Let's consider a real world example. I average about 2.5 points of software work a day. If I were to go to work and feel a moment of inspiration, where I find that the schema comes easier for me to write, and I'm writing quality code, and I'm finding areas of the code that can be improved, I should not stop if I hit 3 points for that day. I should consider to push until that inspiration dwindles, regardless of how much I write on a typical day. Another example is that I typical work very regular hours, 9-5. If I were to be at home at 8:30 PM and I have a eureka moment in the code, I should strike in that moment and capture that inspiration then and not let that moment of inspiration pass me. 
+
+I'm going to try to lean more into this in my software work and also in my personal art and coding projects. I think it is very important to keep up the good habits of coding each day and striving to continuously write good code even when during my low days, but I'm going to try to push longer during my days of inspiration. 

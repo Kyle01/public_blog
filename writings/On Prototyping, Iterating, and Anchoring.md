@@ -1,5 +1,5 @@
 ## On Prototyping, Iterating, and Anchoring
-#### 6/23/2023 - Kyle McVeigh
+#### 7/23/2023 - Kyle McVeigh
 [Go back to all articles](../../)
 
 A great part of my job is meeting with the business and hearing about their problems and ideating alongside them about how we can use technology to reinvent processes to solve emerging problems. My background in finance allows me to sit with the decision makers and make solutions without any intermediary. Each new problem is unique and requires all of my cognitive abilities across finance and computer science. 

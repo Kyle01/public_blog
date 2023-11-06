@@ -9,7 +9,7 @@ Unrelated to video games, I have been inspired by this [article by Whiona](https
 So today I am going to publish my **top nine favorite video games of all time** as of today! Here are some notes and caveats on how I created this list:
 1. List is in alphabetically order. There is no implied best.
 2. I wanted the list to have a variety of games, so I tried to create a diverse list across genres, consoles, and art styles. 
-3. Games included should of aged well and this is in no way a list of video games I enjoyed most when they were published. 
+3. Games included should have aged well and this is in no way a list of video games I enjoyed most when they were published. 
 4. My personal video game playing peeked between 2005 and 2020, so this list is surely biased to those years. 
 5. My favorite video games have interesting mechanics, great world building, and cool art. I really don't play multiplayer games in any serious capacity and I don't play a lot of shooters or driving games. 
 6. The list is 9 long so I have an extra spot incase something comes along that really impresses me

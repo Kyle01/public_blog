@@ -8,7 +8,7 @@ It is that time of year again: [Advent of Code](https://adventofcode.com/). 'Tis
 Let's dive right into it. Advent of Code is free and runs on a donation model. If you enjoy it regularly and have the financial means I encourage you to donate, but there is no pressure and it is free for all participates. Entry is extremely low stakes, so there is no harm in signing up and doing the first day. 
 
 ### AoC is language agnostic
-This is an awesome feature of AoC. Most algorithm questions are language specific but AoC allows for participates to work in any language of their choosing. This means you can try a new language or work in a language that you don't get to code in regularly. I personally like to do it in Ruby to ensure I don't lose those skills from my past life of working at a Rails shop.
+This is an awesome feature of AoC. Most algorithm questions are language specific but AoC allows for participants to work in any language of their choosing. This means you can try a new language or work in a language that you don't get to code in regularly. I personally like to do it in Ruby to ensure I don't lose those skills from my past life of working at a Rails shop.
 
 ### The community is great
 Loneliness is at epidemic levels and it seems that it is harder than ever to find positive communities on the internet. I thoroughly enjoy following the AoC community. In particular, their [reddit group](https://www.reddit.com/r/adventofcode/?rdt=59284) is fantastic. Their global leader board is a window into competitive programming and the ease to create a personal leader board with my coworkers has allowed me to talk and share code with coworkers that I don't get to program with regularly. I also look forward to seeing the memes each year!

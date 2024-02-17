@@ -9,10 +9,10 @@ https://www.kylehasablog.com/posts/reminder:_big_refactors_don't_land
 https://www.kylehasablog.com/posts/seo_improvements_and_image_support
 https://www.kylehasablog.com/posts/software_engineering_team_members
 https://www.kylehasablog.com/posts/state_of_the_blog_2023
-https://www.kylehasablog.com/posts/the_hard_parts_of_being_a_programmer
 https://www.kylehasablog.com/posts/traits_the_best_coders_i_know_have
 https://www.kylehasablog.com/posts/types_of_software_engineers
+https://www.kylehasablog.com/posts/the_hard_parts_of_being_a_programmer
+https://www.kylehasablog.com/posts/yes,_chatgpt_is_the_real_deal_
 https://www.kylehasablog.com/posts/types_of_tech_interviews
 https://www.kylehasablog.com/posts/you_should_do_advent_of_code
 https://www.kylehasablog.com/posts/you've_got_to_love_the_act_of_building
-https://www.kylehasablog.com/posts/yes,_chatgpt_is_the_real_deal_

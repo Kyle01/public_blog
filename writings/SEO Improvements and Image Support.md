@@ -2,7 +2,7 @@
 #### 2/17/2024 - Kyle McVeigh
 [Go back to all articles](../../)
 
-I've never had to build for SEO. All of my professional employment has been to construct internal applications which have been guarded deeply behind serious corporate firewalls. But as an engineer I try to learn about all areas of web development, and SEO and is a significant piece of frontend development.
+I've never had to build for SEO. All of my professional employment has been to construct internal applications which have been guarded deeply behind serious corporate firewalls. But as an engineer I try to learn about all areas of web development, and SEO is a significant piece of frontend development.
 
 Recently, I showed a friend who is employed as a growth marketing consultant my website. They quickly pulled up [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) and showed how my site had fairly good metrics in Performance, Accessibility, and Best Practices, but was weak in SEO. 
 

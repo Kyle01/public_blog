@@ -3,6 +3,7 @@ const readline = require('readline');
 const showdown = require('showdown');
 const convertor = new showdown.Converter();
 const contentList = [];
+const siteMapList = [];
 
 fs.readdirSync('./writings/').forEach((file) => {
   const rl = readline.createInterface({
@@ -31,14 +32,19 @@ fs.readdirSync('./writings/').forEach((file) => {
           "text": `${date} - ${title}`,
           "path": `${path}`
         });
+        siteMapList.push(`https://www.kylehasablog.com/${path}`);
+
         if (!fs.existsSync(`./posts/${path}`)){
           fs.mkdirSync(`./posts/${path}`);
         }
         const contentsJson = {
           "contents": contentList
         }
-        fs.writeFileSync('./contents.json', '')
-        fs.appendFileSync('./contents.json', JSON.stringify(contentsJson));
+        fs.writeFileSync('./sitemap.txt', '')
+        siteMapList.forEach((line) => fs.appendFileSync('./sitemap.txt', line += "\n"))
+
+        fs.writeFileSync('./public/contents.json', '')
+        fs.appendFileSync('./public/contents.json', JSON.stringify(contentsJson));
       }
       const html = convertor.makeHtml(line);
     

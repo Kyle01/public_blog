@@ -43,8 +43,8 @@ fs.readdirSync('./writings/').forEach((file) => {
         fs.writeFileSync('./sitemap.txt', '')
         siteMapList.forEach((line) => fs.appendFileSync('./sitemap.txt', line += "\n"))
 
-        fs.writeFileSync('./public/contents.json', '')
-        fs.appendFileSync('./public/contents.json', JSON.stringify(contentsJson));
+        fs.writeFileSync('./contents.json', '')
+        fs.appendFileSync('./contents.json', JSON.stringify(contentsJson));
       }
       const html = convertor.makeHtml(line);
     

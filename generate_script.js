@@ -5,6 +5,8 @@ const convertor = new showdown.Converter();
 const contentList = [];
 const siteMapList = [];
 
+convertor.setOption('parseImgDimensions', true);
+
 fs.readdirSync('./writings/').forEach((file) => {
   const rl = readline.createInterface({
     input: fs.createReadStream(`./writings/${file}`),
@@ -32,7 +34,7 @@ fs.readdirSync('./writings/').forEach((file) => {
           "text": `${date} - ${title}`,
           "path": `${path}`
         });
-        siteMapList.push(`https://www.kylehasablog.com/${path}`);
+        siteMapList.push(`https://www.kylehasablog.com/posts/${path}`);
 
         if (!fs.existsSync(`./posts/${path}`)){
           fs.mkdirSync(`./posts/${path}`);

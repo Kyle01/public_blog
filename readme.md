@@ -12,6 +12,5 @@ This serves as my personal public blog. I write the posts in markdown and then a
 * HTML & CSS
 
 # Pending items
-* Need to test out pictures via s3 
 * Would like to build some CD/CI that automatically runs the generate script
 * Will consider switching from github pages to cloudflare pages

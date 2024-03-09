@@ -1,10 +1,10 @@
 ## My 2024 Full Stack Boilerplate
-#### 3/2/2024 - Kyle McVeigh
+#### 3/9/2024 - Kyle McVeigh
 [Go back to all articles](../../)
 
 I have interest in starting a brand new personal project in the immediate future. In preparation for starting a new project, I did some reflecting on what stack I'd like to use and I've created a full stack boiler plate template that I've open sourced. Periodically, Hacker News has forums like [this one](https://news.ycombinator.com/item?id=33046696) or [this one](https://news.ycombinator.com/item?id=38500705) or [this one](https://news.ycombinator.com/item?id=38361519) that prove there are many unique technology stacks and people have widely different opinions on the seemingly infinite number of technology choices. I'm going to use this article to discuss what technology I picked in the year of 2024, why I made those decisions, and some advice before you start using my template. 
 
-My full stack boilerplate template can be found [here]()
+My full stack boilerplate template can be found [here](https://github.com/Kyle01/fullstack_boiler_2024)
 
 ### The Stack
 Without further ado, if I was making a new web app and needed to build the minimal viable product as the first or only developer, this is the stack I'd use:

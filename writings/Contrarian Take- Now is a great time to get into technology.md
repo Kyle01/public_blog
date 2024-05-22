@@ -1,4 +1,4 @@
-## Contrarian Take: Now is a great time to get into technology
+## Contrarian Take- Now is a great time to get into technology
 #### 5/18/2024 - Kyle McVeigh
 [Go back to all articles](../../)
 

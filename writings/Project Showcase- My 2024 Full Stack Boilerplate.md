@@ -1,4 +1,4 @@
-## My 2024 Full Stack Boilerplate
+## Project Showcase-  My 2024 Full Stack Boilerplate
 #### 3/9/2024 - Kyle McVeigh
 [Go back to all articles](../../)
 

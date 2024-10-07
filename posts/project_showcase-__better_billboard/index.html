@@ -1,0 +1,23 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta><link rel="stylesheet" type="text/css" href="../../style.css"><h2 id="projectshowcasebetterbillboard">Project Showcase-  Better Billboard</h2><h4 id="1062024kylemcveigh">10/6/2024 - Kyle McVeigh</h4><p><a href="../../">Go back to all articles</a></p><p>I try to do a fullstack product-forward project for myself at least once a year. I think it keeps my skills sharp and I enjoy it. I try to do something outside of finance and closer to my personal interests and monetization is never a priority. </p><p>While I was at <a href="https://www.strandbooks.com/">The Strand</a> near Union Square, NYC, I flipped open a book and saw the below photo of the billboard chart physically printed. I never thought about it before, but I guess that does make sense. Before the internet, the billboard top 100 music chart would be published in magazines as well as shared on the radio. I thought the design was really good- it was brutalist and easy to read. </p><p><img src="https://kyle-mcv-blog-pictures.s3.amazonaws.com/billboard_print.png" alt="Printed Billboard" width="800" height="auto" /></p><p>My disappointment when I actually went to the Billboard website was palpable. <a href="https://www.billboard.com/charts/hot-100/">Here is the site for you to experience it for yourself</a>. This site is a great example of how experiencing the internet, especially on desktop, is just awful. Banners, Ads, autoplaying videos, it really is just awful. The page is a whooping 27mbs of pain that makes me fearful to engage at all.</p><p>The idea arrived in my head pretty quickly: Can we scrape the billboard site, put it in a database, and create a better experience that is closer to the print design? Sure, why not? </p><p>Without further ado here is <a href="https://better-billboard.vercel.app/">the site I made</a> to achieve this vision. This is truly just a proof of concept, but I'm happy with what I've achieved so far and iterating from here should be easy. </p><p>Here is <a href="https://github.com/Kyle01/Better-Billboard">the code</a>. Nothing here should really stand out, the backend is a Flask Python App hosted on <a href="https://render.com/">Render</a>. The scrape is in Python and is triggered via an AWS EventBridge CRON.  The frontend is NextJS and hosted on <a href="https://vercel.com/kyle01s-projects">Vercel</a>. I built this project iteratively, checkout the pull request to see that progress. </p><p>So what is next for this? I haven't decided. I feel like I could take this project much further. Here is a list of unsorted ideas which could take this project further: </p><ol>
+<li>Add integrations with Spotify, Apple Music, and Soundcloud, to allow users to start playing the songs from the site or at least link to them</li>
+</ol><ol start="2">
+<li>Make a weekly email that users can opt into for the new chart which drops every Tuesday morning</li>
+</ol><ol start="3">
+<li>Make a better mobile experience. I didn't spend a moment on this, please don't judge me</li>
+</ol><ol start="4">
+<li>Host it on a custom url and not the default from Vercel</li>
+</ol><ol start="5">
+<li>Rip out vercel and render and self host it</li>
+</ol><ol start="6">
+<li>Add an AI integration to add information on each artist in digestible manner</li>
+</ol><ol start="7">
+<li>Add album art</li>
+</ol><ol start="8">
+<li>Add other top music charts and show the differences between each</li>
+</ol><ol start="9">
+<li>Add previous charts available</li>
+</ol><ol start="10">
+<li>Utilize server side rendering with incremental static regeneration</li>
+</ol><ol start="11">
+<li>Improve error states and loading states</li>
+</ol><p>If I don't keep working on this, I can ensure you I'm working on something else and I very much look forward to sharing that with you when I'm ready. </p>

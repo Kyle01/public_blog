@@ -1,5 +1,5 @@
 ## My Responsibilities that are Not Writing Code
-#### 4/23/24
+#### 4/23/2024
 [Go back to all articles](../../)
 
 My primary professional responsibility is to write code. As an individual contributor and a software engineer, I work in a larger system other than myself and that inevitably means I have more responsibilities other than writing code. I wanted to define some of those other responsibilities I regularly perform that allow me to be successful:

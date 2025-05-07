@@ -1,5 +1,5 @@
 ## NYC Recommendations
-#### 4/28/25
+#### 4/28/2025
 [Go back to all articles](../../)
 
 I love living in New York City. For me living in New York City is a gift. I've been here only four years and everyday still feels different. People ask me for my recommendations all the time, so I've compiled that list here. Some quick disclaimers, these are my favorite and not a best-of-list. And this list is extremely subject to change, my favorites change all the time.
